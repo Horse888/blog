@@ -68,6 +68,7 @@ body {
 	background-repeat: repeat;
 	margin:0px 50px;
 	vertical-align: middle;
+	-webkit-transform: rotate(-20deg);-moz-transform: rotate(-20deg)
 }
 #contactus {
 	padding-left:20px;
@@ -107,9 +108,23 @@ a {
 -->
 </style>
 
+<script type="text/javascript">
+	function rotateMe(){
+		
+//		var i=0;
+//		var range = 30;
+//		
+//		var timer =setInterval(function(){
+//			i+=range;
+//					if (i >= 30) clearInterval(timer);
+//					
+//		document.body.style.cssText+="-webkit-transform: rotate(-"+i+"deg);-moz-transform: rotate(-"+i+"deg)";},10);
+	}
+</script>
+
 </head>
  
-<body>
+<body onload="rotateMe()">
 <div id="titleDiv">
 <span id="title">605 Studio</span><br />
 <span id="subTitle">605 Studio focus on iOS app development</span></div>
